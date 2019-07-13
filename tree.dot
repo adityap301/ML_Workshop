@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<is_28+ &le; 0.5<br/>gini = 0.5<br/>samples = 35<br/>value = [18, 17]<br/>class = watching_yes>, fillcolor="#fef8f4"] ;
+1 [label=<gender &le; 0.5<br/>gini = 0.484<br/>samples = 17<br/>value = [7, 10]<br/>class = watching_no>, fillcolor="#c4e2f7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<employment_status &le; 0.5<br/>gini = 0.469<br/>samples = 8<br/>value = [3, 5]<br/>class = watching_no>, fillcolor="#b0d8f5"] ;
+1 -> 2 ;
+3 [label=<gini = 0.444<br/>samples = 3<br/>value = [1, 2]<br/>class = watching_no>, fillcolor="#9ccef2"] ;
+2 -> 3 ;
+4 [label=<gini = 0.48<br/>samples = 5<br/>value = [2, 3]<br/>class = watching_no>, fillcolor="#bddef6"] ;
+2 -> 4 ;
+5 [label=<employment_status &le; 0.5<br/>gini = 0.494<br/>samples = 9<br/>value = [4, 5]<br/>class = watching_no>, fillcolor="#d7ebfa"] ;
+1 -> 5 ;
+6 [label=<gini = 0.5<br/>samples = 2<br/>value = [1, 1]<br/>class = watching_yes>, fillcolor="#ffffff"] ;
+5 -> 6 ;
+7 [label=<gini = 0.49<br/>samples = 7<br/>value = [3, 4]<br/>class = watching_no>, fillcolor="#cee6f8"] ;
+5 -> 7 ;
+8 [label=<gender &le; 0.5<br/>gini = 0.475<br/>samples = 18<br/>value = [11, 7]<br/>class = watching_yes>, fillcolor="#f6d1b7"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<gini = 0.49<br/>samples = 7<br/>value = [4, 3]<br/>class = watching_yes>, fillcolor="#f8e0ce"] ;
+8 -> 9 ;
+10 [label=<gini = 0.463<br/>samples = 11<br/>value = [7, 4]<br/>class = watching_yes>, fillcolor="#f4c9aa"] ;
+8 -> 10 ;
+}
